@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userInterface.Gui">
+   <children>
+      <AnchorPane prefHeight="625.0" prefWidth="232.0" style="-fx-border-color: black;">
+         <children>
+            <RadioButton fx:id="mealyOption" layoutX="18.0" layoutY="31.0" mnemonicParsing="false" text="Mealy" />
+            <RadioButton fx:id="mooreOption" layoutX="18.0" layoutY="48.0" mnemonicParsing="false" text="Moore" />
+            <Label layoutX="19.0" layoutY="14.0" text="Seleccione el tipo de automata:" />
+            <Label layoutX="18.0" layoutY="76.0" text="Ingrese los nombres de los estados" />
+            <Label layoutX="18.0" layoutY="93.0" text="separados por coma (,)" />
+            <Label layoutX="18.0" layoutY="110.0" text="El primer estado sera el inicial" />
+            <Label layoutX="18.0" layoutY="163.0" text="Lenguaje de entrada:" />
+            <Label layoutX="18.0" layoutY="217.0" text="Lenguaje de salida:" />
+            <Label layoutX="19.0" layoutY="309.0" text="Ver automata" />
+            <TextField fx:id="states_TextField" layoutX="18.0" layoutY="127.0" promptText="Ej: A,B,C..." />
+            <TextField fx:id="input_TextField" layoutX="18.0" layoutY="180.0" promptText="Ej: 0,1,2..." />
+            <TextField fx:id="output_TextField" layoutX="18.0" layoutY="234.0" promptText="Ej: a,b,c..." />
+            <Button fx:id="showButtonId" layoutX="18.0" layoutY="272.0" mnemonicParsing="false" onAction="#show_Button" text="Mostrar" />
+            <Button fx:id="saveButtonId" disable="true" layoutX="85.0" layoutY="272.0" mnemonicParsing="false" onAction="#save_Button" text="Guardar" />
+            <Button fx:id="ReducedButtonId" disable="true" layoutX="22.0" layoutY="336.0" mnemonicParsing="false" onAction="#reduced_button" text="Reducido" />
+            <Button layoutX="154.0" layoutY="272.0" mnemonicParsing="false" onAction="#new_Button" text="Nuevo" />
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="centralPane" layoutX="232.0" prefHeight="625.0" prefWidth="391.0" style="-fx-border-color: black;" />
+      <StackPane fx:id="centralPane2" layoutX="623.0" prefHeight="625.0" prefWidth="402.0" style="-fx-border-color: black;" />
+   </children>
+</Pane>
